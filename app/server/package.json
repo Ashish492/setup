@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "ts-node -r tsconfig-paths/register ./src/server.ts ",
+    "start:prod": "node -r ts-node /register/transpile-only  -r tsconfig-paths/register ./dist/src/server.js",
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^38.0.0",
+    "eslint-import-resolver-typescript": "^3.6.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv-safe": "^8.2.0"
+  }
+}
