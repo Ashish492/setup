@@ -96,7 +96,23 @@
     // "allowUnreachableCode": true,                     /* Disable error reporting for unreachable code. */
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "paths": {
+      "@utils": ["src/utils/index.ts"],
+      "@routes": ["src/routes/index.ts"],
+      "@controllers": ["src/controllers/index.ts"],
+      "@services": ["src/services/index.ts"],
+      "@types": ["src/types/index.ts"],
+      "@middlewares": ["src/middlewares/index.ts"],
+      "@models": ["src/models/index.ts"],
+      "@utils/*": ["src/utils/*"],
+      "@routes/*": ["src/routes/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@models/*": ["src/models/*"],
+      "@services/*": ["src/services/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@types/*": ["src/types/*"]
+    }
   },
   "include": ["./src/**/*.ts"],
   "exclude": ["./node_modules", "./dist"]

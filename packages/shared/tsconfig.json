@@ -1,3 +1,5 @@
+
+
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
@@ -14,7 +16,14 @@
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+      "lib": ["ES2015"],
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./src/"
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+   "include": ["./src"]
 }
+
